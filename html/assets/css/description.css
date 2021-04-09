@@ -1,0 +1,42 @@
+:root{
+    --edge-padding: 2em;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+}
+
+body{
+    height: 100vh;
+    padding: var(--edge-padding);
+    background-image: url('../image/nature.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.nav-item{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 1.5em;
+}
