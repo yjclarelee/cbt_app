@@ -3,20 +3,20 @@
 }
 
 *{
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Bitter', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 body{
-    height: 100vh;
     padding: var(--edge-padding);
     /* background-image: url('../image/nature.jpg'); */
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
 nav{
@@ -31,47 +31,77 @@ nav a {
     color: black;
 }
 
+.main-logo{
+    text-align: center;
+}
+
+h1, 
+.caption{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
 h1{
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0;
 }
 
 .nav-item{
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 1.5em;
 }
 
-ul{
-    list-style-type: none;
-    padding-left: 0;
+.quotations,
+.purpose, 
+.content{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-article{
-    height: 100vh;
-    padding-bottom: 3.5em;
-    line-height: 3em;
+.quotations{
+    justify-content: space-around;    
+}
+
+.quote, 
+.content {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: rgb(243, 131, 224);
+}
+
+
+.negative{
+   color: rgb(245, 94, 220); 
+}
+
+.purpose{
+    justify-content: center;
+}
+.purpose p, 
+.content{
+    padding: 0 2em;
+    line-height: 1.7;
     font-size: 2rem;
     font-weight: 500;
 }
 
-.quotes{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.purpose p{
+    color: rgb(217, 99, 247);
+}
+
+.content{
+    color: #f89c81;
 }
 
 ul{
-    width: 65%;
+    list-style: none;
+    padding-left: 0;
+    
 }
 
-.negative-thinking-img{
-    width: 20%;
-    height: 80%;
-}
-
-.explanation{
-    width: 92%;
-    margin: 0 auto;
+.tabs{
+    color:#e7653d; 
 }
